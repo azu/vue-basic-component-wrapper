@@ -1,5 +1,7 @@
 # vue-basic-component-wrapper
 
+https://github.com/Developmint/vue-link
+
 ## Project setup
 ```
 yarn install
