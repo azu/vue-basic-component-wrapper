@@ -13,7 +13,7 @@ Vue.component('new-link', {
     render(h, { data, slots, props }) {
         data.props = props;
         const defaultSlots = slots().default
-        const isExternalDomain = Boolean(props.href && allowOrigins.includes(new URL(props.href).origin));
+        const isExternalDomain = Boolean(props.href && props.href !== "#" && allowOrigins.includes(new URL(props.href).origin));
         return h('a', {
             ...data,
             attrs: {

@@ -6,6 +6,9 @@
       check out the
       <new-link href="https://cli.vuejs.org" aria-current="true">vue-cli documentation</new-link>.
     </p>
+    <div>
+      <new-link href="#" @click.prevent="alert">CLICK</new-link>
+    </div>
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li><new-link href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel">babel</new-link></li>
@@ -35,6 +38,11 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods:{
+    alert(){
+      alert("Hello!");
+    }
   }
 }
 </script>
